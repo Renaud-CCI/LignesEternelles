@@ -11,10 +11,14 @@
   </p> -->
 
   <HeroBanner />
+  <AboutContainer />
+  <BioContainer />
 </template>
 
 <script setup lang="ts">
 import HeroBanner from '@/views/HeroBanner.vue';
+import AboutContainer from '@/views/AboutContainer.vue';
+import BioContainer from './views/BioContainer.vue';
 </script>
 
 <style scoped></style>
