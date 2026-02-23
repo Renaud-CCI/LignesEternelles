@@ -1,14 +1,76 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="fr">
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
+    <title>Lignes Eternelles — Pauline Zotier</title>
+    <meta name="description" content="Pauline Zotier — Peintre en lignes éternelles. Personnalisation écologique et respectueuse pour rendre hommage à vos proches.">
+    <link rel="canonical" href="/">
+    <meta name="theme-color" content="#252b2b">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lignes Eternelles — Pauline Zotier">
+    <meta property="og:description" content="Personnalisation écologique et respectueuse pour rendre hommage à vos proches.">
+    <meta property="og:image" content="/sharing.webp">
+    <meta property="og:url" content="https://peintreenligneseternelles.fr/">
+    <meta property="og:site_name" content="Lignes Eternelles">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lignes Eternelles — Pauline Zotier">
+    <meta name="twitter:description" content="Personnalisation écologique et respectueuse pour rendre hommage à vos proches.">
+    <meta name="twitter:image" content="/sharing.webp">
+    <meta name="twitter:site" content="@paulinezotier">
+    <meta name="twitter:creator" content="@paulinezotier">
     <link rel="stylesheet" href="/src/style.css">
   </head>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Pauline Zotier",
+        "url": "https://peintreenligneseternelles.fr",
+        "jobTitle": "Peintre en lignes éternelles",
+        "email": "mailto:paulinezotier@peintreenligneseternelles.fr",
+        "telephone": "+33769010041"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Lignes Eternelles",
+        "url": "https://peintreenligneseternelles.fr"
+      }
+    ]
+  }
+  </script>
   <body>
+    <!-- Skip link for keyboard users -->
+    <a href="#app" class="skip-link">Aller au contenu</a>
+
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+
+    <style>
+      .skip-link {
+        position: absolute;
+        left: -999px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+      .skip-link:focus {
+        left: 1rem;
+        top: 1rem;
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        background: #000;
+        color: #fff;
+        z-index: 9999;
+      }
+    </style>
   </body>
 </html>

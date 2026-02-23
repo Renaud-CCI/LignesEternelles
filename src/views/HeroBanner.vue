@@ -23,9 +23,26 @@
     </p>
 
     <div class="absolute inset-0 flex items-end justify-center pb-6 md:pb-16">
-      <a href="#work"
+      <a href="#gallery" @click.prevent="scrollTo('#gallery')"
         class="text-lg md:text-2xl md:font-bold text-background hover:text-foreground bg-foreground hover:bg-transparent border border-background hover:border-foreground px-4 py-2 md:p-6 rounded transition-colors duration-300 ease-in-out rounded-lg"
         role="button">En savoir plus</a>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+const scrollTo = (hash: string) => {
+  const id = hash.startsWith('#') ? hash.slice(1) : hash
+  const el = document.getElementById(id)
+  if (!el) return
+  el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  // ensure element can receive focus briefly
+  const prevTab = el.getAttribute('tabindex')
+  el.setAttribute('tabindex', '-1')
+    ; (el as HTMLElement).focus({ preventScroll: true })
+  setTimeout(() => {
+    if (prevTab === null) el.removeAttribute('tabindex')
+    else el.setAttribute('tabindex', prevTab)
+  }, 1000)
+}
+</script>

@@ -1,5 +1,5 @@
 <template>
-  <section aria-label="Biographie" class="w-full flex justify-center items-center my-8 xl:my-16">
+  <section id="bio-container" aria-label="Biographie" class="w-full flex justify-center items-center my-8 xl:my-16">
     <div class="w-full max-w-4xl relative px-4 sm:px-20">
 
       <div class="overflow-hidden rounded">
@@ -40,7 +40,7 @@ const props = defineProps({
   items: {
     type: Array as () => string[], default: () => [
       "Artiste autodidacte depuis plus de 15 ans, je souhaite aujourd'hui mettre mon art au service de la personnalisation de l'hommage que nous pouvons rendre à ceux qui nous ont quittés.",
-      "De part mes activités professionnelles dans les domaines de l'animation et de la communication, j'ai su développer une capacité d'écoute et de médiation qui sont pour moi essentielles dans cette activité."
+      "De par mes activités professionnelles dans les domaines de l'animation et de la communication, j'ai su développer une capacité d'écoute et de médiation qui sont pour moi essentielles dans cette activité."
     ]
   }
 })

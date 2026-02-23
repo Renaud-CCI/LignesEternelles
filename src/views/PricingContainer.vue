@@ -1,5 +1,6 @@
 <template>
-  <section lang="fr" aria-labelledby="pricing-title" class="w-full flex justify-center items-center my-8 xl:my-16">
+  <section id="pricing" lang="fr" aria-labelledby="pricing-title"
+    class="w-full flex justify-center items-center my-8 xl:my-16">
     <div class="w-full max-w-4xl relative px-4 sm:px-32">
 
       <h2 id="pricing-title" class="pb-4">Tarifs</h2>

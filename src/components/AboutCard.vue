@@ -16,7 +16,7 @@
 
 
     <div class="w-full flex justify-center">
-      <a :href="link" :aria-label="`${buttonText} — ${title}`"
+      <a :href="link" @click.prevent="handleAnchor(link)" :aria-label="`${buttonText} — ${title}`"
         class="text-lg text-center text-background hover:text-foreground bg-foreground hover:bg-transparent border border-background hover:border-foreground w-1/2 py-4 rounded transition-colors duration-300 ease-in-out rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2">{{
           buttonText }}</a>
     </div>
@@ -60,4 +60,24 @@ onMounted(() => {
 onBeforeUnmount(() => {
   if (observer && root.value) observer.unobserve(root.value)
 })
+
+function handleAnchor(href: string) {
+  if (!href) return
+  if (href.startsWith('#')) {
+    const id = href.slice(1)
+    const el = document.getElementById(id)
+    if (!el) return
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    const prevTab = el.getAttribute('tabindex')
+    el.setAttribute('tabindex', '-1')
+      ; (el as HTMLElement).focus({ preventScroll: true })
+    setTimeout(() => {
+      if (prevTab === null) el.removeAttribute('tabindex')
+      else el.setAttribute('tabindex', prevTab)
+    }, 1000)
+  } else {
+    // external or non-hash link: default navigation
+    window.location.href = href
+  }
+}
 </script>

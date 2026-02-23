@@ -1,0 +1,10 @@
+# robots.txt for Lignes Eternelles
+# Allow all crawlers by default. Provide sitemap and host below.
+
+User-agent: *
+Allow: /
+
+# Sitemap for the site
+Sitemap: https://peintreenligneseternelles.fr/sitemap.xml
+# Preferred host
+Host: peintreenligneseternelles.fr

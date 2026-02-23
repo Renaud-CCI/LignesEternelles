@@ -18,9 +18,9 @@ const cards = [
     image: about1,
     alt: "Peinture florale sur panneau de bois, avec des épis de blé et des fleurs jaunes de primevère officinale",
     title: "Mon projet",
-    text: "Le jour où ma grand mère est décédée, j'ai eu la chance de pouvoir peindre sur son cercueil. Un moment précieux et plein d'émotions pour moi. Les membres de notre famille et ses amis étaient en joie en appercevant ces instants de vie qui avainet pris forme sur un objet d'ordinaire très sobre. Un déclic pour moi !",
+    text: "Le jour où ma grand mère est décédée, j'ai eu la chance de pouvoir peindre sur son cercueil. Un moment précieux et plein d'émotions pour moi. Les membres de notre famille et ses amis étaient en joie en apercevant ces instants de vie qui avaient pris forme sur un objet d'ordinaire très sobre. Un déclic pour moi !",
     buttonText: "Qui suis-je ?",
-    link: "#work"
+    link: "#bio-container"
   },
   {
     image: about2,
@@ -28,7 +28,7 @@ const cards = [
     title: "Mes Valeurs",
     text: "Je souhaite établir un lien direct avec les familles en deuil, être une oreille attentive afin de retranscrire le plus fidèlement possible leur souhait de personnalisation. Une démarche écologique avec un choix de peinture à l'eau biosourcée et biodégradable, respectueuse des sols, du vivant.",
     buttonText: "Galerie photos",
-    link: "#work"
+    link: "#gallery"
   },
   {
     image: about3,
@@ -36,7 +36,7 @@ const cards = [
     title: "Ma proposition",
     text: "Je vous propose un catalogue afin de vous accompagner dans votre choix. Des modèles divers et variés personnalisables. Vous pouvez également me proposer des modèles personnels pour une création sur mesure. Je vous invite à consulter ma galerie afin de voir ce que je suis en capacité de réaliser.",
     buttonText: "Tarifs",
-    link: "#work"
+    link: "#pricing"
   }
 ]
 </script>

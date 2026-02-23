@@ -14,12 +14,12 @@
       <p><a href="mailto:paulinezotier@peintreenligneseternelles.fr"
           aria-label="Envoyer un email à Pauline Zotier">paulinezotier@peintreenligneseternelles.fr</a></p>
 
-      <p class="w-full text-end text-xs text-neutral-500 bg-neutral-900 pe-4 pt-8 sm:pt-4 pb-2">Site éco-conçu par <a
-          href="https://www.renaudbresson.dev" target="_blank" rel="noopener noreferrer"
-          aria-label="Site de Renaud Bresson (nouvel onglet)">Renaud Bresson</a></p>
-
     </div>
   </footer>
+
+  <p class="w-full text-end text-xs text-neutral-500 bg-neutral-900 pe-4 pt-8 sm:pt-4 pb-2">Site éco-conçu par <a
+      href="https://www.renaudbresson.dev" target="_blank" rel="noopener noreferrer"
+      aria-label="Site de Renaud Bresson (nouvel onglet)">Renaud Bresson</a></p>
 </template>
 
 <script setup lang="ts">
