@@ -11,14 +11,14 @@
 
       <h2 :id="headingId" class="my-6 ps-6 w-full text-left">{{ title }}</h2>
 
-      <p class="text-justify mx-6 mb-10">{{ text }}</p>
+      <p class="text-justify md:text-lg mx-6 mb-10">{{ text }}</p>
     </div>
 
 
     <div class="w-full flex justify-center">
       <a :href="link" :aria-label="`${buttonText} — ${title}`"
         class="text-lg text-center text-background hover:text-foreground bg-foreground hover:bg-transparent border border-background hover:border-foreground w-1/2 py-4 rounded transition-colors duration-300 ease-in-out rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2">{{
-        buttonText }}</a>
+          buttonText }}</a>
     </div>
   </section>
 </template>

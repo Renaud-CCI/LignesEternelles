@@ -1,6 +1,6 @@
 <template>
-  <section aria-label="Biographie" class="w-full flex justify-center items-center my-8">
-    <div class="w-full max-w-4xl relative px-4 sm:px-8">
+  <section aria-label="Biographie" class="w-full flex justify-center items-center my-8 xl:my-16">
+    <div class="w-full max-w-4xl relative px-4 sm:px-20">
 
       <div class="overflow-hidden rounded">
         <div class="flex transition-transform duration-700 ease-out"
@@ -8,7 +8,7 @@
           <div v-for="(item, i) in itemsList" :key="i" class="w-full flex-shrink-0 p-6">
             <article aria-live="polite"
               class="border border-foreground p-6 rounded h-56 flex items-center justify-center">
-              <p class="text-justify">{{ item }}</p>
+              <p class="text-justify md:text-lg xl:text-xl">{{ item }}</p>
             </article>
           </div>
         </div>
